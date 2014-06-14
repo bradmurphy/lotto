@@ -1,0 +1,30 @@
+// COLORS
+$cream: #f4f4f4;
+$gray: #626366;
+$orange: #e85039;
+$white: #ffffff;
+$green: #48a942;
+$black: #000000;
+$youtube: #3B5998;
+$instagram: #4E433C;
+$twitter: #00a0d1;
+
+// MEDIA QUERIES
+
+@mixin mq($point) {
+  @if $point == bmf {
+    @media (min-width: 1900px) { @content; }
+  }
+  @if $point == hs {
+    @media (min-width: 1280px) { @content; }
+  }
+  @if $point == bs {
+    @media (min-width: 992px) { @content; }
+  }
+  @else if $point == ms {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $point == ss {
+    @media (min-width: 480px)  { @content; }
+  }
+}
