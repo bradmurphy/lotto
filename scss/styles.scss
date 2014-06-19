@@ -181,8 +181,8 @@ html, body {
 
 .learn {
 	position: absolute;
-	top: 150px;
-	left: 75%;
+	top: 95px;
+	left: 63%;
 	color: $white;
 	padding: 5px 10px;
 	font-size: .8em;
@@ -191,8 +191,18 @@ html, body {
 	text-transform: uppercase;
 	border-radius: 15px;
 	-webkit-transition: all .3s ease-in-out;
+	@include mq(ss) {
+		left: 70%;
+		top: 155px;
+		font-size: 1em;
+	}
+	@include mq(ipadmini) {
+		top: 190px;
+		font-size: 1em;
+	}
 	@include mq(ms) {
-		top: 225px;
+		left: 75%;
+		top: 265px;
 		font-size: 1em;
 	}
 	@include mq(bs) {

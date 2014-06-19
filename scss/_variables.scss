@@ -24,7 +24,13 @@ $twitter: #00a0d1;
   @else if $point == ms {
     @media (min-width: 768px) { @content; }
   }
+  @else if $point == ipadmini {
+    @media (min-width: 600px)  { @content; }
+  }
   @else if $point == ss {
     @media (min-width: 480px)  { @content; }
+  }
+  @else if $point == iphone {
+    @media (min-width: 320px)  { @content; }
   }
 }

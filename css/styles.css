@@ -201,8 +201,8 @@ body {
 
 .learn {
   position: absolute;
-  top: 150px;
-  left: 75%;
+  top: 95px;
+  left: 63%;
   color: white;
   padding: 5px 10px;
   font-size: .8em;
@@ -213,9 +213,25 @@ body {
   -webkit-transition: all .3s ease-in-out;
 }
 
+@media (min-width: 480px) {
+  .learn {
+    left: 70%;
+    top: 155px;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 600px) {
+  .learn {
+    top: 190px;
+    font-size: 1em;
+  }
+}
+
 @media (min-width: 768px) {
   .learn {
-    top: 225px;
+    left: 75%;
+    top: 265px;
     font-size: 1em;
   }
 }
