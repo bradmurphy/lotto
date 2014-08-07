@@ -642,13 +642,20 @@ footer {
 		padding: 0;
 		margin: 0;
 		left: 50%;
-		width: 490px;
-		margin-left: -245px;
+		width: 242px;
+		margin-left: -121px;
+		@include mq(ss) {
+			width: 490px;
+			margin-left: -245px;
+		}
 		li {
-			display: inline-block;
+			text-align: center;
 			padding: 0 10px;
 			font-size: 1.5em;
-					a {
+			@include mq(ss) {
+				display: inline-block;
+			}
+				a {
 				color: $gray;
 				text-decoration: none;
 				-webkit-animation: all .3s ease-in-out;
